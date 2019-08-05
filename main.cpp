@@ -135,6 +135,9 @@ int main(int argc, char* argv[]) {
   	usage();
   	return -1;
   }
+  char track[] = "취약점";
+  char name[] = "김희연";
+  printf("[bob8][%s]send_arp[%s]", track, name);
   char* dev = argv[1];
   struct in_addr send_ip, target_ip;
   inet_aton(argv[2], &send_ip);
